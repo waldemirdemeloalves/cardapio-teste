@@ -1,0 +1,34 @@
+/* ESTRELAS DE AVALIAÇÕES */
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+}
+.star.selected {
+    color: gold;
+}
+/* FIM ESTRELAS DE AVALIAÇÕES */
+
+/* AVALIAÇÕES */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .star-gold {
+    font-size: 30px;
+    cursor: default;
+    color: gold;
+  }
+
+  .star-grey {
+    font-size: 30px;
+    cursor: default;
+    color: grey;
+  }  
+/* FIM AVALIAÇÕES */
