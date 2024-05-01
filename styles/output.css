@@ -2947,9 +2947,15 @@ footer{
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 540px) {
   .menu-mobile-flutuante{
-    width: 400px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 344px) {
+  .menu-mobile-flutuante{
+    width: 300px;
   }
 }
 
@@ -3189,10 +3195,6 @@ footer{
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:min-w-\[50\%\] {
-    min-width: 50%;
   }
 
   .md\:min-w-\[600px\] {
