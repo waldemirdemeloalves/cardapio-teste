@@ -76,6 +76,7 @@
   @media (max-width: 540px){
     .modal .modal-content {
       width: 360px;
+      padding: 10px;
     }
     }
 
@@ -94,7 +95,6 @@
   @media (max-width: 540px){
     .modal img {
       width: 100px;
-      height: 50%;
     }
     }
 
@@ -111,6 +111,18 @@
 
   .modal .conteudo-text{
     margin-left: 20px
+  }
+
+  @media (max-width: 540px){
+    .modal .conteudo-text {
+      margin-left: 10px
+    }
+  }
+
+  @media (max-width: 344px){
+    .modal .conteudo-text {
+      margin-left: 10px
+    }
   }
 
   .close-modal-products {
