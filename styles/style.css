@@ -15,6 +15,12 @@ overflow-x: hidden!important;
 }
 }
 
+@media (max-width: 344px){
+    body, html {
+    overflow-x: hidden!important;
+    }
+    }
+
 /* COMEÇA A ESTILIZAÇÃO DAS BARRAS DE ROLAGEM */
 ::-webkit-scrollbar{
     background-color: #E5E7EB;

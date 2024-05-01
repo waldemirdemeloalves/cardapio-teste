@@ -990,6 +990,10 @@ video {
   max-width: 450px;
 }
 
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2762,6 +2766,12 @@ body, html{
 /*Corrigir escrollamento no Mobile*/
 
 @media (max-width: 540px){
+  body, html {
+    overflow-x: hidden!important;
+  }
+}
+
+@media (max-width: 344px){
   body, html {
     overflow-x: hidden!important;
   }
