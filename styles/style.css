@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body, html{
     background-color: #f6f7f8;
     overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+  
+/*Corrigir escrollamento no Mobile*/
+@media (max-width: 786px){
+body, html {
+overflow-x: hidden!important;
+}
 }
 
 /* COMEÇA A ESTILIZAÇÃO DAS BARRAS DE ROLAGEM */
