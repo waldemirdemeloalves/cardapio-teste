@@ -2400,6 +2400,11 @@ video {
   color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
+.text-pink-700 {
+  --tw-text-opacity: 1;
+  color: rgb(190 24 93 / var(--tw-text-opacity));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -2749,9 +2754,17 @@ video {
   forced-color-adjust: none;
 }
 
-body{
+body, html{
   background-color: #f6f7f8;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+/*Corrigir escrollamento no Mobile*/
+
+@media (max-width: 540px){
+  body, html {
+    overflow-x: hidden!important;
+  }
 }
 
 /* COMEÇA A ESTILIZAÇÃO DAS BARRAS DE ROLAGEM */
