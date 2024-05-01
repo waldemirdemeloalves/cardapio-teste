@@ -75,13 +75,13 @@
 
   @media (max-width: 540px){
     .modal .modal-content {
-      width: 350px;
+      width: 360px;
     }
     }
 
   @media (max-width: 344px){
     .modal .modal-content {
-      width: 350px;
+      width: 360px;
     }
     }
 
@@ -94,6 +94,7 @@
   @media (max-width: 540px){
     .modal img {
       width: 100px;
+      height: 50%;
     }
     }
 
