@@ -42,31 +42,9 @@
     <!-- FIM BOTÃO VOLTAR AO TOPO -->
 
 
-    <!-- HEADER -->
-    <header class="w-full bg-[#1e1a33] bg-cover bg-center">
-        <div class="bg-[#1e1a33]/70 w-full h-full flex flex-col justify-center items-center py-7">
-            <img 
-            src="./assets/logo.svg"
-            alt="Logo Menu"
-            class="h-[180px] hover:scale-110 duration-200"
-            />
-            <h1 class="text-2xl mt-4 mb-2 font-semibold text-white">
-                Cardápio Digital
-            </h1>
-
-            <span class="text-white font-medium">Endereço fica Aqui, 100</span>
-
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium">
-                    Ter à Dom - 16:00 às 23:59
-                </span>
-            </div>
-        </div>
-    </header>
-    <!-- FIM DO HEADER -->
 
     <!-- MENU FLUTUANTE -->
-    <nav class="flex justify-between bg-white/90 shadow-lg px-3 md:px-[100px] h-[80px] top-0 sticky grow shrink basis-[100vw] z-50">
+    <nav class="flex justify-between bg-white/90 shadow-lg px-3 md:px-[100px] h-[80px] w-full top-0 fixed grow shrink basis-[100vw] z-50">
         <div class="loja items-center flex">
             <button class="cursor-default gap-3 text-base px-4 py-1 ml-2 mr-2 rounded-lg font-medium duration-200 bg-green-600 text-white block open">
                 Loja Aberta
@@ -110,15 +88,41 @@
                 <li><a href="#categoria-1"><button>Categoria 1</button></a></li>
                 <li><a href="#adicionais"><button>Produtos com Adicionais</button></a></li>
                 <li><a href="#tamanhos"><button>Produtos por Tamanhos</button></a></li>
-                <li><a href="#rodape"><button>&#9733 Avaliações</button></a></li>
+                <li><a href="#avaliations"><button>&#9733 Avaliações</button></a></li>
             </ul>
         </div>
     
         <!-- FIM NAV LIST -->
-    </nav>
+    </nav>    
+    <!-- FIM MENU FLUTUANTE -->
+
+
+
+
+    <!-- HEADER -->
+    <header class="w-full bg-[#1e1a33] bg-cover bg-center mt-[80px]">
+        <div class="bg-[#1e1a33]/70 w-full h-full flex flex-col justify-center items-center py-7">
+            <img 
+            src="./assets/logo.svg"
+            alt="Logo Menu"
+            class="h-[180px] hover:scale-110 duration-200"
+            />
+            <h1 class="text-2xl mt-4 mb-2 font-semibold text-white">
+                Cardápio Digital
+            </h1>
+
+            <span class="text-white font-medium">Endereço fica Aqui, 100</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">
+                    Ter à Dom - 16:00 às 23:59
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
 
     
-    <!-- FIM MENU FLUTUANTE -->
     
     <!-- TÍTULO MENU -->
     <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso menu</h2>
@@ -679,7 +683,7 @@
             <!-- FIM LOGO RODAPÉ -->
 
             <!-- DEIXE SUA AVALIAÇÃO -->
-            <div class="w-full h-full p-5">
+            <div id="avaliations" class="w-full h-full p-5">
                 <div class="bg-white rounded-lg h-full p-4">
                     <h2 class="text-center text-lg font-semibold">Deixe uma avaliação</h2>
                     <div id="rating">
