@@ -954,14 +954,6 @@ video {
   width: 2.25rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
-.w-\[350px\] {
-  width: 350px;
-}
-
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -2758,22 +2750,24 @@ video {
   forced-color-adjust: none;
 }
 
-body, html{
+body{
   background-color: #f6f7f8;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
-/*Corrigir escrollamento no Mobile*/
+/* RESOLVENDO SCROLL HORIZONTAL NO MOBILE */
 
-@media (max-width: 540px){
+@media only screen and (max-width: 1920px) {
   body, html {
-    overflow-x: hidden!important;
+    overflow-x: hidden;
   }
 }
 
-@media (max-width: 344px){
-  body, html {
-    overflow-x: hidden!important;
+/* RESOLVENDO O PADDING LATERAL DOS MOBILES */
+
+@media only screen and (max-width: 1080px) {
+  #menu{
+    padding: 10px;
   }
 }
 
@@ -2814,7 +2808,7 @@ footer{
 
 .menu-sup {
   background-color: rgb(255, 255, 255 / 0.6) !important;
-  /* Define cor do mmenu superior*/
+  /* Define cor do menu superior*/
   color: rgb(0, 0, 0) !important;
   /* Define a cor dos textos no menu superior*/
 }
@@ -2947,13 +2941,7 @@ footer{
   overflow-x: hidden;
 }
 
-@media (max-width: 540px) {
-  .menu-mobile-flutuante{
-    width: 300px;
-  }
-}
-
-@media (max-width: 344px) {
+@media (max-width: 1080px) {
   .menu-mobile-flutuante{
     width: 300px;
   }
@@ -3201,12 +3189,12 @@ footer{
     min-width: 600px;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:gap-4 {

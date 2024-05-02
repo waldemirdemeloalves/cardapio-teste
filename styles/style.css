@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html{
+body{
     background-color: #f6f7f8;
     overflow-x: hidden;
-    overflow-x: hidden !important;
-}
-  
-/*Corrigir escrollamento no Mobile*/
-@media (max-width: 540px){
-body, html {
-overflow-x: hidden!important;
-}
 }
 
-@media (max-width: 344px){
+/* RESOLVENDO SCROLL HORIZONTAL NO MOBILE */
+@media only screen and (max-width: 1920px) {
     body, html {
-    overflow-x: hidden!important;
+        overflow-x: hidden;
     }
+}
+
+/* RESOLVENDO O PADDING LATERAL DOS MOBILES */
+@media only screen and (max-width: 1080px) {
+    #menu{
+        padding: 10px;
     }
+}
 
 /* COMEÇA A ESTILIZAÇÃO DAS BARRAS DE ROLAGEM */
 ::-webkit-scrollbar{
@@ -51,7 +51,7 @@ overflow-x: hidden!important;
 
         /* DEFINIÇÃO DE CORES PADRÕES */
         .menu-sup {
-            background-color: rgb(255, 255, 255 / 0.6) !important; /* Define cor do mmenu superior*/
+            background-color: rgb(255, 255, 255 / 0.6) !important; /* Define cor do menu superior*/
             color: rgb(0, 0, 0) !important; /* Define a cor dos textos no menu superior*/
         }
 
@@ -166,13 +166,7 @@ overflow-x: hidden!important;
         overflow-x: hidden;
     }
 
-    @media (max-width: 540px) {
-        .menu-mobile-flutuante{
-            width: 300px;
-        }
-    }
-
-    @media (max-width: 344px) {
+    @media (max-width: 1080px) {
         .menu-mobile-flutuante{
             width: 300px;
         }
