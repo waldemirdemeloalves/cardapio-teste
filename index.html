@@ -44,7 +44,7 @@
 
 
     <!-- MENU FLUTUANTE -->
-    <nav class="flex justify-between bg-white/90 shadow-lg px-3 md:px-[100px] h-[80px] w-full top-0 fixed grow shrink basis-[100vw] z-50">
+    <nav class="flex justify-between bg-white/90 shadow-lg px-3 md:px-[100px] h-[80px] w-full top-0 fixed grow shrink basis-[100vw] backdrop-filter backdrop-blur-sm z-50">
         <div class="loja items-center flex">
             <button class="cursor-default gap-3 text-base px-4 py-1 ml-2 mr-2 rounded-lg font-medium duration-200 bg-green-600 text-white block open">
                 Loja Aberta
@@ -84,8 +84,8 @@
         <!-- NAV LIST -->
         <div class="menu-mobile-flutuante">
             <ul class="nav-list">                
-                <li><a href="#promocoes"><button>Promoções</button></a></li>
-                <li><a href="#categoria-1"><button>Categoria 1</button></a></li>
+                <li><a href="#promocoes"><button><i class="fa fa-gift"></i> Promoções</button></a></li>
+                <li><a href="#categoria-1"><button>Produtos Simples</button></a></li>
                 <li><a href="#adicionais"><button>Produtos com Adicionais</button></a></li>
                 <li><a href="#tamanhos"><button>Produtos por Tamanhos</button></a></li>
                 <li><a href="#avaliations"><button>&#9733 Avaliações</button></a></li>
@@ -100,7 +100,7 @@
 
 
     <!-- HEADER -->
-    <header class="w-full bg-[#1e1a33] bg-cover bg-center mt-[80px]">
+    <header class="w-full bg-[#1e1a33] bg-cover bg-center pt-[80px]">
         <div class="bg-[#1e1a33]/70 w-full h-full flex flex-col justify-center items-center py-7">
             <img 
             src="./assets/logo.svg"
@@ -242,7 +242,7 @@
                     <!-- Sem Complementos (Quando ativo desativa os outros) -->
                     <label><input type="checkbox" data-complment-name="*Sem Complementos" data-complment-price="00" class="exclusive" onclick="handleExclusiveCheckbox(this)"> Sem complementos</label>
 
-                    <button class="mt-3 px-5 py-1 rounded add-to-cart-btn duration-200" data-price="5" onclick="addToCartWithComplements(this)"><i class="fa fa-cart-plus text-lg text-white"></i> Adicionar ao Carrinho</button>
+                    <button class="mt-3 px-1 py-1 rounded add-to-cart-btn duration-200 w-full" data-price="5" onclick="addToCartWithComplements(this)"><i class="fa fa-cart-plus text-lg text-white"></i> Comprar</button>
                     <button class="duration-200 px-5 rounded indisp-btn w-full mt-2">indisponivel</button>
                     
                 </div>
@@ -273,7 +273,7 @@
                     <!-- Sem Complementos (Quando ativo desativa os outros) -->
                     <label><input type="checkbox" data-complment-name="*Sem Complementos" data-complment-price="00" class="exclusive" onclick="handleExclusiveCheckbox(this)"> Sem complementos</label>
 
-                    <button class="mt-3 px-5 py-1 rounded add-to-cart-btn duration-200" onclick="addToCartWithComplements(this)"><i class="fa fa-cart-plus text-lg text-white"></i> Adicionar ao Carrinho</button>
+                    <button class="mt-3 px-1 py-1 rounded add-to-cart-btn duration-200 w-full" onclick="addToCartWithComplements(this)"><i class="fa fa-cart-plus text-lg text-white"></i> Comprar</button>
                     <button class="duration-200 px-5 rounded indisp-btn w-full mt-2">indisponivel</button>
 
                 </div>
@@ -315,8 +315,8 @@
                     <label><input type="radio" name="tamanho" data-complment-name="tamanho 3 (R$ 13,00)" data-complment-price="13" onchange="updateSizesPrices()"> Tamanho 3 (R$ 13,00)</label><br>
 
 
-                    <button class="mt-3 px-5 py-1 rounded add-to-cart-btn duration-200" data-price="0" onclick="addToCartWithSizes(this)">
-                        <i class="fa fa-cart-plus text-lg text-white"></i> Adicionar ao Carrinho
+                    <button class="mt-3 px-1 py-1 rounded add-to-cart-btn duration-200 w-full" data-price="0" onclick="addToCartWithSizes(this)">
+                        <i class="fa fa-cart-plus text-lg text-white"></i> Comprar
                     </button>
                     <button class="duration-200 px-5 rounded indisp-btn w-full mt-2">indisponivel</button>
                 </div>
@@ -345,8 +345,8 @@
                     <label><input type="radio" name="tamanho2" data-complment-name="tamanho 2 (R$ 12,00)" data-complment-price="12" onchange="updateSizesPrices()"> Tamanho 2 (+R$ 12,00)</label><br>
                     <label><input type="radio" name="tamanho2" data-complment-name="tamanho 3 (R$ 15,00)" data-complment-price="15" onchange="updateSizesPrices()"> Tamanho 3 (+R$ 15,00)</label><br>
 
-                    <button class="mt-3 px-5 py-1 rounded add-to-cart-btn duration-200" data-pric onclick="addToCartWithSizes(this)">
-                        <i class="fa fa-cart-plus text-lg text-white"></i> Adicionar ao Carrinho
+                    <button class="mt-3 px-1 py-1 rounded add-to-cart-btn duration-200 w-full" data-pric onclick="addToCartWithSizes(this)">
+                        <i class="fa fa-cart-plus text-lg text-white"></i> Comprar
                     </button>
                     <button class="duration-200 px-5 rounded indisp-btn w-full mt-2">indisponivel</button>
                 </div>
@@ -616,15 +616,15 @@
 
     <!-- MODAL PRODUTOS -->
     <div id="myModal" class="modal">
-        <div class="modal-content max-w-[600px]">
-        <div class="conteudo w-full h-full">
-            <img id="modal-img" src="" alt="">
-            <div class="conteudo-text w-full h-full">
-            <h2 id="modal-title" class="text-lg font-semibold mb-2"></h2>
-            <p id="modal-description" class="text-sm font-medium"></p>
-            <p id="modal-price" class="text-lg font-semibold mt-3"></p>
-            <span class="close-modal-products float-end">Fechar</span>
-        </div>  
+        <div class="modal-content max-w-[800px]">
+        <div class="conteudo w-full h-full grid grid-cols-1 md:grid-cols-2">
+            <img id="modal-img" src="" alt="" class="w-full min-w-full h-60 mb-3 md:h-full">
+            <div class="conteudo-text h-full">
+                <h2 id="modal-title" class="text-2xl font-semibold mb-3"></h2>
+                <p id="modal-description" class="text-sm font-medium"></p>
+                <p id="modal-price" class="text-xl font-semibold my-3 text-green-700"></p>
+                <span class="close-modal-products">Fechar</span>
+            </div>  
         </div>  
         </div>
     </div>

@@ -112,24 +112,17 @@
     }
     }
 
-  @media (max-width: 344px){
-    .modal img {
-      width: 100px;
-    }
-    }
-
-  .modal .conteudo{
-    display: flex;
+  .modal .conteudo {
     align-content: space-between;
   }
 
   .modal .conteudo-text{
-    margin-left: 20px
+    margin-left: 20px;
   }
 
-  @media (max-width: 540px){
+  @media (max-width: 1080px){
     .modal .conteudo-text {
-      margin-left: 10px
+      margin-left: 0;
     }
   }
 
