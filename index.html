@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/avaliations.css">
     <link rel="stylesheet" href="./styles/popup.css">
     <link rel="stylesheet" href="./styles/product-modal.css">
+    <link rel="stylesheet" href="./styles/funcionamento.css">
 
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
 
@@ -113,9 +114,9 @@
 
             <span class="text-white font-medium">Endereço fica Aqui, 100</span>
 
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5 mx-5" id="date-span">
                 <span class="text-white font-medium">
-                    Ter à Dom - 16:00 às 23:59
+                    <button id="openModalFuncionamentoBtn"></button>
                 </span>
             </div>
         </div>
@@ -614,6 +615,16 @@
     </div>
     <!-- FIM MENU -->
 
+    <!-- MODAL HORÁRIOS -->
+    <div id="myModalFuncionamento" class="modal">
+        <div class="modal-content-funcionamento  max-w-[800px]">
+          <span class="close-funcionamento text-red-400 hover:text-red-600">&times;</span>
+          <h2 class="text-xl my-3 text-center font-bold">Horários de Funcionamento</h2>
+          <div id="horariosFuncionamento" class="mx-3 mb-3"></div>
+        </div>
+      </div>
+    <!-- FIM MODAL HORÁRIOS -->
+
     <!-- MODAL PRODUTOS -->
     <div id="myModal" class="modal">
         <div class="modal-content max-w-[800px]">
@@ -629,6 +640,8 @@
         </div>
     </div>
     <!-- FIM MODAL PRODUTOS -->
+
+    
 
 
 
@@ -801,7 +814,8 @@
     <script src="./scripts.js"></script>
     <script src="./script-styles/bg-transitions.js"></script>
     <script src="./script-styles/avalia.js"></script>
-    <script src="./script-styles/popup.js"></script>
+    <script src="./script-styles/popup.js"></script>    
+    <script src="./script-styles/funcionamento.js"></script>
     
 </body>
 </html>
