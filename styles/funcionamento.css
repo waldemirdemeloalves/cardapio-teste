@@ -36,7 +36,7 @@
     .close-funcionamento {
       float: right;
       font-size: 28px;
-      font-weight: bold;
+      margin-top: -12px;
     }
 
     .close-funcionamento:hover,

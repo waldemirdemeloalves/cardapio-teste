@@ -32,9 +32,9 @@ var btn = document.getElementById('openModalFuncionamentoBtn');
         style = 'color: red;';
       }
     } else if (i === today) {
-      openingHours = '<strong>' + day + '</strong>: das 18h às 23h59';
+      openingHours = '<strong>' + day + '</strong>: das 16h às 23h59';
     } else {
-      openingHours = day + ': das 18h às 23h59';
+      openingHours = day + ': das 16h às 23h59';
     }
 
     var para = document.createElement('p');
@@ -45,10 +45,10 @@ var btn = document.getElementById('openModalFuncionamentoBtn');
 
   function getOpeningText() {
     if (today === 0) { // Domingo
-      return 'Hoje (Domingo) das 18h às 23h59';
+      return 'Hoje (Domingo) das 16h às 23h59';
     } else if (today === 1) { // Segunda
       return 'Fechado hoje (Segunda-feira)';
     } else { // Terça a Sábado
-      return 'Hoje (' + days[today] + ') das 18h às 23h59';
+      return 'Hoje (' + days[today] + ') das 16h às 23h59';
     }
   }
